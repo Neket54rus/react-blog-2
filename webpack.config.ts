@@ -11,11 +11,13 @@ const configOptionsPaths: BuildOptionsPaths = {
 
 const mode = 'development'
 const isDev = mode === 'development'
+const port = '3000'
 
 const configOptions: BuildOptions = {
 	mode,
 	paths: configOptionsPaths,
-	isDev 
+	isDev,
+	port
 }
 
 const config = buildWebpackConfig(configOptions)
