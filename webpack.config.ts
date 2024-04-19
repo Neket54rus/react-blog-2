@@ -5,15 +5,15 @@ import { BuildEnv, BuildOptions, BuildOptionsPaths } from './config/build/types/
 
 const configOptionsPaths: BuildOptionsPaths = {
 	build: path.resolve(__dirname, 'dist'),
-	entry: path.resolve(__dirname, 'src', 'index.ts'),
+	entry: path.resolve(__dirname, 'src', 'index.tsx'),
 	html: path.resolve(__dirname, 'public', 'index.html')
 }
 
 export default (env: BuildEnv) => {
-	const mode = env.mode || 'development'
+	const mode = env?.mode || 'development'
 	const port = env?.port || '3000'
 
-	const isDev = env.mode === 'development'
+	const isDev = mode === 'development'
 
 	const configOptions: BuildOptions = {
 		mode,
