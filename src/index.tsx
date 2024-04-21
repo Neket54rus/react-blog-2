@@ -3,11 +3,14 @@ import { BrowserRouter } from 'react-router-dom'
 
 import { App } from './App'
 
-import './index.scss'
+import './styles/index.scss'
+import { ThemeProvider } from './theme'
 
 const root = createRoot(document.getElementById('root'))
 root.render(
     <BrowserRouter>
-        <App />
+        <ThemeProvider>
+            <App />
+        </ThemeProvider>
     </BrowserRouter>,
 )
