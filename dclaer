@@ -1,0 +1,41 @@
+[33mcommit 7c46af5293364b680b9659a04f3c7e649aedb9a7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Никита Евдокимов <nikitaevodkimovit@gmail.com>
+Date:   Sun Apr 21 21:06:36 2024 +0700
+
+    Добавлена светлая и темная тема
+
+[33mcommit 30bc10c57c74d3e149bd8218cab74b9044a3f25b[m
+Author: Никита Евдокимов <nikitaevodkimovit@gmail.com>
+Date:   Sun Apr 21 20:01:24 2024 +0700
+
+    Добавлен роутинг
+
+[33mcommit bbf0f1ca3734400e403471117d745e380a89eaaf[m
+Author: Никита Евдокимов <nikitaevodkimovit@gmail.com>
+Date:   Fri Apr 19 09:08:22 2024 +0700
+
+    add React, prettier, sass modules
+
+[33mcommit 263d518ca34012fa6ab02a25d1d8bb2677a64c1f[m
+Author: Никита Евдокимов <nikitaevodkimovit@gmail.com>
+Date:   Sun Apr 14 11:18:18 2024 +0700
+
+    Добавлены переменные окружения
+
+[33mcommit 233c90bc3642cb3a3447808ffce312378d30501a[m
+Author: Никита Евдокимов <nikitaevodkimovit@gmail.com>
+Date:   Sun Apr 14 11:05:07 2024 +0700
+
+    Добавлен webpack dev server
+
+[33mcommit 01637f60e5aa9d4fd59128b2414a049b3ceca03e[m
+Author: Никита Евдокимов <nikitaevodkimovit@gmail.com>
+Date:   Sun Apr 14 10:37:29 2024 +0700
+
+    Декомпозиция конфига
+
+[33mcommit 25e4c01e78b513a2c86c9b1d0801450629bc170d[m
+Author: Никита Евдокимов <nikitaevodkimovit@gmail.com>
+Date:   Tue Apr 2 10:15:55 2024 +0700
+
+    init project
