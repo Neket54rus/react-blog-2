@@ -1,11 +1,15 @@
-@import '/src/app/styles/themes/light.scss';
-@import '/src/app/styles/themes/dark.scss';
-
 .Header {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.Navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--accent-color);
+    justify-content: space-between;
+    height: 80px;
+
+    &Left {
+        display: flex;
+        align-items: center;
+    }
 }

@@ -1,13 +1,13 @@
 import { RouteProps } from 'react-router-dom'
 
-import { AppRoutes } from '../types/routeConfigTypes'
-
-import { AboutPage } from '@/pages/AboutPage'
 import { MainPage } from '@/pages/MainPage'
+import { PostPage } from '@/pages/PostPage'
+
+import { AppRoutes } from '../types/routeConfigTypes'
 
 export const routePaths: Record<AppRoutes, string> = {
     main: '/',
-    about: 'about',
+    post: 'posts/:id',
 }
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -15,8 +15,8 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
         path: routePaths.main,
         element: <MainPage />,
     },
-    about: {
-        path: routePaths.about,
-        element: <AboutPage />,
+    post: {
+        path: routePaths.post,
+        element: <PostPage />,
     },
 }

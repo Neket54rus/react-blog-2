@@ -1,19 +1,43 @@
-import { FC } from 'react'
-import { Link } from 'react-router-dom'
+import { FC, memo, useMemo } from 'react'
 
-import * as styles from './Header.module.scss'
+import { useTheme } from '@/shared/config/theme'
+import { Icon } from '@/shared/ui/Icon'
+import { Section } from '@/shared/ui/Section'
+import { classNames } from '@/shared/lib/classNames'
+import { Link } from '@/shared/ui/Link'
+import { Button } from '@/shared/ui/Button'
+import Logo from '@/shared/assets/icons/logo.svg'
+import LightIconTheme from '@/shared/assets/icons/themeLight.svg'
+import DarkIconTheme from '@/shared/assets/icons/themeDark.svg'
+import GithubIcon from '@/shared/assets/icons/github.svg'
 
-const pages = [
-    { name: 'Main', path: '/' },
-    { name: 'About', path: '/about' },
-]
+import { HeaderProps } from '../types/header'
 
-export const Header: FC = () => {
-    const links = pages.map((page) => (
-        <Link key={page.path} to={page.path}>
-            {page.name}
-        </Link>
-    ))
+import * as classes from './Header.module.scss'
 
-    return <div className={styles.Header}>{links}</div>
-}
+export const Header: FC<HeaderProps> = memo(({ className }) => {
+    const { theme, toggleTheme } = useTheme()
+
+    const themeButton = useMemo(
+        () => <Icon Icon={theme === 'light' ? DarkIconTheme : LightIconTheme} width='32px' />,
+        [theme],
+    )
+
+    return (
+        <header className={classNames(classes.Header, {}, [className])}>
+            <Section>
+                <nav className={classes.Navbar}>
+                    <Link to='/' width='80px'>
+                        <Logo />
+                    </Link>
+                    <div className={classes.NavbarLeft}>
+                        <Button onClick={toggleTheme}>{themeButton}</Button>
+                        <Link to='https://github.com/Neket54rus' target='_blank' width='48px' height='48px' hover>
+                            <Icon Icon={GithubIcon} width='32px' height='32px' theme={theme} />
+                        </Link>
+                    </div>
+                </nav>
+            </Section>
+        </header>
+    )
+})

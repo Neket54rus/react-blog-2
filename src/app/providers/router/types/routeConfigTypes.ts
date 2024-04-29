@@ -1,1 +1,1 @@
-export type AppRoutes = 'main' | 'about'
+export type AppRoutes = 'main' | 'post'

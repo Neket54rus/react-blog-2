@@ -1,0 +1,13 @@
+.Link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &Hover {
+        border-radius: 8px;
+
+        &:hover {
+            background-color: var(--accent-color);
+        }
+    }
+}
