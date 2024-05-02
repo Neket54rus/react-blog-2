@@ -6,9 +6,9 @@ import { ButtonProps } from './types/button'
 
 import * as classes from './Button.module.scss'
 
-export const Button: FC<ButtonProps> = ({ children, className, onClick }) => {
+export const Button: FC<ButtonProps> = ({ children, className, ...otherProps }) => {
     return (
-        <button className={classNames(classes.Button, {}, [className])} onClick={onClick}>
+        <button className={classNames(classes.Button, {}, [className])} {...otherProps}>
             {children}
         </button>
     )
