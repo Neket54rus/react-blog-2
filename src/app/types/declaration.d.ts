@@ -1,3 +1,7 @@
+declare module '*.png'
+declare module '*.jpg'
+declare module '*.jpeg'
+
 declare module '*.scss' {
     interface IClassNames {
         [className: string]: string
