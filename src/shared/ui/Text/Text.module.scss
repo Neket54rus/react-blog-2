@@ -1,0 +1,37 @@
+.Text {
+    &.xs {
+        font: var(--font-xs);
+    }
+
+    &.s {
+        font: var(--font-s);
+    }
+
+    &.m {
+        font: var(--font-m);
+    }
+
+    &.l {
+        font: var(--font-l);
+    }
+
+    &.xl {
+        font: var(--font-xl);
+    }
+
+    &.xxl {
+        font: var(--font-xxl);
+    }
+
+    &.light {
+        font-weight: 100;
+    }
+
+    &.normal {
+        font-weight: 600;
+    }
+
+    &.bold {
+        font-weight: 800;
+    }
+}
