@@ -9,9 +9,9 @@ import './app/styles/index.scss'
 
 const root = createRoot(document.getElementById('root'))
 root.render(
-    <BrowserRouter>
-        <ThemeProvider>
-            <App />
-        </ThemeProvider>
-    </BrowserRouter>,
+	<BrowserRouter>
+		<ThemeProvider>
+			<App />
+		</ThemeProvider>
+	</BrowserRouter>,
 )

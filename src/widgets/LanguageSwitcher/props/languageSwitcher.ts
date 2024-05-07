@@ -1,3 +1,3 @@
 export interface LanguageSwitcherProps {
-    className?: string
+	className?: string
 }

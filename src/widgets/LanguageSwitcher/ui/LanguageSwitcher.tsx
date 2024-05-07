@@ -7,17 +7,19 @@ import { Text } from '@/shared/ui/Text'
 import { LanguageSwitcherProps } from '../props/languageSwitcher'
 
 export const LanguageSwitcher: FC<LanguageSwitcherProps> = memo(({ className }) => {
-    const { t, i18n } = useTranslation()
+	const { t, i18n } = useTranslation()
 
-    const reverseLanguage = i18n.language === 'ru' ? 'en' : 'ru'
+	const reverseLanguage = i18n.language === 'ru' ? 'en' : 'ru'
 
-    const switchLanguage = () => {
-        i18n.changeLanguage(reverseLanguage)
-    }
+	const switchLanguage = () => {
+		i18n.changeLanguage(reverseLanguage)
+	}
 
-    return (
-        <Button className={className} onClick={switchLanguage}>
-            <Text text={t('Язык')} size='m' weight='normal' />
-        </Button>
-    )
+	return (
+		<Button className={className} onClick={switchLanguage}>
+			<Text text={t('Язык')} size='m' weight='normal' />
+		</Button>
+	)
 })
+
+LanguageSwitcher.displayName = 'LanguageSwitcher'

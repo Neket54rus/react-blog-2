@@ -1,15 +1,15 @@
 .Header {
-    border-bottom: 1px solid var(--accent-color);
+	border-bottom: 1px solid var(--accent-color);
 }
 
 .Navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
 
-    &Left {
-        display: flex;
-        align-items: center;
-    }
+	&Left {
+		display: flex;
+		align-items: center;
+	}
 }

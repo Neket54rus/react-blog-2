@@ -2,11 +2,13 @@
 	"experimentalTernaries": true,
 	"printWidth": 120,
 	"tabWidth": 4,
+	"useTabs": true,
 	"semi": false,
 	"singleQuote": true,
 	"jsxSingleQuote": true,
 	"trailingComma": "all",
 	"bracketSpacing": true,
 	"bracketSameLine": false,
-	"arrowParens": "always"
+	"arrowParens": "always",
+	"endOfLine": "crlf"
 }
