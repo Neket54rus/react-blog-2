@@ -8,15 +8,15 @@ import { LinkProps } from './types/link'
 import * as classes from './Link.module.scss'
 
 export const Link: FC<LinkProps> = (props) => {
-	const { children, className, width, height, hover, ...otherProps } = props
+    const { children, className, width, height, hover, ...otherProps } = props
 
-	return (
-		<RouterLink
-			className={classNames(classes.Link, { [classes.LinkHover]: hover }, [className])}
-			style={{ width, height }}
-			{...otherProps}
-		>
-			{children}
-		</RouterLink>
-	)
+    return (
+        <RouterLink
+            className={classNames(classes.Link, { [classes.LinkHover]: hover }, [className])}
+            style={{ width, height }}
+            {...otherProps}
+        >
+            {children}
+        </RouterLink>
+    )
 }

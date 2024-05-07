@@ -7,20 +7,20 @@ import { BuildOptions } from './types/config'
 import { buildDevServer } from './buildDevServer'
 
 export const buildWebpackConfig = (options: BuildOptions): webpack.Configuration => {
-	return {
-		mode: options.mode,
-		entry: options.paths.entry,
-		output: {
-			filename: '[name].[contenthash].js',
-			path: options.paths.build,
-			clean: true,
-		},
-		plugins: buildPlugins(options.paths.html, options.isDev),
-		module: {
-			rules: buildLoaders(options.isDev),
-		},
-		resolve: buildResolvers(options.paths.src),
-		devtool: options.isDev && 'inline-source-map',
-		devServer: options.isDev && buildDevServer(options.port),
-	}
+    return {
+        mode: options.mode,
+        entry: options.paths.entry,
+        output: {
+            filename: '[name].[contenthash].js',
+            path: options.paths.build,
+            clean: true,
+        },
+        plugins: buildPlugins(options.paths.html, options.isDev),
+        module: {
+            rules: buildLoaders(options.isDev),
+        },
+        resolve: buildResolvers(options.paths.src),
+        devtool: options.isDev && 'inline-source-map',
+        devServer: options.isDev && buildDevServer(options.port),
+    }
 }
